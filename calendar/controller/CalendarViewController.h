@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CalendarViewController.h
 //  jiyiwangluo
 //
 //  Created by mac on 15/9/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CalendarViewController : UIViewController
 
 @end
-

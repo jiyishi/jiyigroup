@@ -1,0 +1,48 @@
+//
+//  Common.pch
+//  jiyiwangluo
+//
+//  Created by mac on 15/9/10.
+//  Copyright (c) 2015年 mac. All rights reserved.
+//
+
+#ifndef jiyiwangluo_Common_pch
+#define jiyiwangluo_Common_pch
+
+//常用控件
+#import "MyUtil.h"
+//数据库
+#import "FMDatabase.h"
+//刷新
+#import "EGORefreshTableFooterView.h"
+#import "EGORefreshTableHeaderView.h"
+//网络图片
+#import "SDImageCache.h"
+//网络数据请求
+#import "AFHttpManager.h"
+//view类拓
+#import "UIView+Extension.h"
+//加载图像
+#import "ProgressHUD.h"
+
+//屏幕宽高
+#define JYWidth [UIScreen mainScreen].bounds.size.width
+#define JYHeight [UIScreen mainScreen].bounds.size.height
+
+//字体大小
+#define JYFont(size) [UIFont systemFontOfSize:size]
+
+//DEBug
+#ifdef DEBUG
+#define JYLog(...)  NSLog(__VA_ARGS__)
+
+#else
+#define JYLog(...)
+
+#endif
+
+//颜色
+#define JYColor(red,green,blue,alpha) ([UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:alpha])
+#define JYColorFloat(red,green,blue,alpha) ([UIColor colorWithRed:red green:green blue:blue alpha:alpha])
+
+#endif
