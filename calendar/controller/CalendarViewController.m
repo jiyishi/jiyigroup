@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     UILabel *label = [[UILabel alloc]init];
     label.backgroundColor = [UIColor yellowColor];
+    label.alpha = 0.5;
     [self.view addSubview:label];
 }
 
