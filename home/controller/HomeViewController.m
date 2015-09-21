@@ -16,39 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, JYWidth, 667-20) style:UITableViewStylePlain];
-    tableView.delegate = self;
-//    fsdgsdnm
-    //khyytf
-    tableView.dataSource = self;
-    //seferwgferg
-//    khjk
-//    gg
-    [self.view addSubview:tableView];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - UITableView代理
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 10;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *cellId = @"cellId";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (nil == cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-    }
-    return cell;
-}
-
 /*
 #pragma mark - Navigation
 
