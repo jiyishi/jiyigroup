@@ -11,6 +11,10 @@
 		046AC9FB1BAFC8CC00FF09C2 /* JYIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC9FA1BAFC8CC00FF09C2 /* JYIntroductionViewController.m */; };
 		046ACA321BAFF27100FF09C2 /* JYRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ACA311BAFF27100FF09C2 /* JYRegisterView.m */; };
 		046ACA351BAFF2E000FF09C2 /* JYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ACA341BAFF2E000FF09C2 /* JYController.m */; };
+		046ACA381BAFFC8B00FF09C2 /* SetPassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ACA371BAFFC8B00FF09C2 /* SetPassController.m */; };
+		046ACA3B1BB002C300FF09C2 /* UserLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ACA3A1BB002C200FF09C2 /* UserLabelViewController.m */; };
+		046ACA3E1BB003E400FF09C2 /* LogInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ACA3D1BB003E400FF09C2 /* LogInController.m */; };
+		046ACA411BB0058500FF09C2 /* LookPassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ACA401BB0058500FF09C2 /* LookPassController.m */; };
 		04BBF35B1BA181CC00C4DD7A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBF35A1BA181CC00C4DD7A /* libsqlite3.dylib */; };
 		04BBF3921BA1822200C4DD7A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF35E1BA1822200C4DD7A /* AFHTTPRequestOperation.m */; };
 		04BBF3931BA1822200C4DD7A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF3601BA1822200C4DD7A /* AFHTTPRequestOperationManager.m */; };
@@ -80,6 +84,14 @@
 		046ACA311BAFF27100FF09C2 /* JYRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRegisterView.m; sourceTree = "<group>"; };
 		046ACA331BAFF2E000FF09C2 /* JYController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYController.h; sourceTree = "<group>"; };
 		046ACA341BAFF2E000FF09C2 /* JYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYController.m; sourceTree = "<group>"; };
+		046ACA361BAFFC8B00FF09C2 /* SetPassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPassController.h; sourceTree = "<group>"; };
+		046ACA371BAFFC8B00FF09C2 /* SetPassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPassController.m; sourceTree = "<group>"; };
+		046ACA391BB002C200FF09C2 /* UserLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLabelViewController.h; sourceTree = "<group>"; };
+		046ACA3A1BB002C200FF09C2 /* UserLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLabelViewController.m; sourceTree = "<group>"; };
+		046ACA3C1BB003E400FF09C2 /* LogInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInController.h; sourceTree = "<group>"; };
+		046ACA3D1BB003E400FF09C2 /* LogInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInController.m; sourceTree = "<group>"; };
+		046ACA3F1BB0058500FF09C2 /* LookPassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookPassController.h; sourceTree = "<group>"; };
+		046ACA401BB0058500FF09C2 /* LookPassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookPassController.m; sourceTree = "<group>"; };
 		04BBF35A1BA181CC00C4DD7A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		04BBF35D1BA1822200C4DD7A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		04BBF35E1BA1822200C4DD7A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -299,6 +311,14 @@
 				046ACA341BAFF2E000FF09C2 /* JYController.m */,
 				046ACA301BAFF27100FF09C2 /* JYRegisterView.h */,
 				046ACA311BAFF27100FF09C2 /* JYRegisterView.m */,
+				046ACA361BAFFC8B00FF09C2 /* SetPassController.h */,
+				046ACA371BAFFC8B00FF09C2 /* SetPassController.m */,
+				046ACA391BB002C200FF09C2 /* UserLabelViewController.h */,
+				046ACA3A1BB002C200FF09C2 /* UserLabelViewController.m */,
+				046ACA3C1BB003E400FF09C2 /* LogInController.h */,
+				046ACA3D1BB003E400FF09C2 /* LogInController.m */,
+				046ACA3F1BB0058500FF09C2 /* LookPassController.h */,
+				046ACA401BB0058500FF09C2 /* LookPassController.m */,
 			);
 			path = register;
 			sourceTree = "<group>";
@@ -701,6 +721,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BBF39F1BA1822200C4DD7A /* SDWebImageDecoder.m in Sources */,
+				046ACA381BAFFC8B00FF09C2 /* SetPassController.m in Sources */,
 				04BBF3AA1BA1822200C4DD7A /* UIView+WebCacheOperation.m in Sources */,
 				04D737881BA17BA9009D2400 /* MyUtil.m in Sources */,
 				04BBF3A21BA1822200C4DD7A /* SDWebImageManager.m in Sources */,
@@ -709,6 +730,7 @@
 				04D737331BA15C62009D2400 /* jiyiwangluo.xcdatamodeld in Sources */,
 				04BBF39E1BA1822200C4DD7A /* SDWebImageCompat.m in Sources */,
 				04BBF3A11BA1822200C4DD7A /* SDWebImageDownloaderOperation.m in Sources */,
+				046ACA3B1BB002C300FF09C2 /* UserLabelViewController.m in Sources */,
 				04576E281BA6BBBC00B08BFC /* AFHttpManager.m in Sources */,
 				046ACA351BAFF2E000FF09C2 /* JYController.m in Sources */,
 				04BBF3991BA1822200C4DD7A /* AFURLResponseSerialization.m in Sources */,
@@ -722,6 +744,7 @@
 				04BBF3A81BA1822200C4DD7A /* UIImageView+HighlightedWebCache.m in Sources */,
 				04D737A01BA18064009D2400 /* FMDatabase.m in Sources */,
 				04BBF3961BA1822200C4DD7A /* AFSecurityPolicy.m in Sources */,
+				046ACA3E1BB003E400FF09C2 /* LogInController.m in Sources */,
 				04BBF3BE1BA1828C00C4DD7A /* UIBarButtonItem+extension.m in Sources */,
 				04D737941BA17FBA009D2400 /* MineViewController.m in Sources */,
 				046ACA321BAFF27100FF09C2 /* JYRegisterView.m in Sources */,
@@ -736,6 +759,7 @@
 				04BBF3951BA1822200C4DD7A /* AFNetworkReachabilityManager.m in Sources */,
 				04D7377D1BA175B3009D2400 /* MainTabBarController.m in Sources */,
 				04D737A11BA18064009D2400 /* FMDatabaseAdditions.m in Sources */,
+				046ACA411BB0058500FF09C2 /* LookPassController.m in Sources */,
 				04BBF39B1BA1822200C4DD7A /* MKAnnotationView+WebCache.m in Sources */,
 				04D7372D1BA15C62009D2400 /* main.m in Sources */,
 				04BBF3A01BA1822200C4DD7A /* SDWebImageDownloader.m in Sources */,

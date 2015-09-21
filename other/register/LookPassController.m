@@ -1,28 +1,26 @@
-
 //
-//  ZCController.m
+//  LookPassController.m
 //  JYRegisterViewDemo
 //
 //  Created by asios on 15/8/15.
 //  Copyright (c) 2015年 梁大红. All rights reserved.
 //
 
-#import "JYController.h"
+#import "LookPassController.h"
 #import "JYRegisterView.h"
-#import "SetPassController.h"
-
-@interface JYController ()
+@interface LookPassController ()
 
 @end
 
-@implementation JYController
+@implementation LookPassController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
     JYRegisterView *JYzcView = [[JYRegisterView alloc]
-                                initwithFrame:self.view.bounds JYRegisterViewTypeSMS:JYRegisterViewTypeScanfPhoneSMS plTitle:@"请输入获取到的验证码"
-                                title:@"下一步"
+                                initwithFrame:self.view.bounds JYRegisterViewTypeSMS:JYRegisterViewTypeNoScanfSMS plTitle:@"请输入验证码"
+                                title:@"提交"
                                 
                                 hq:^BOOL(NSString *phoneStr) {
                                     
@@ -30,10 +28,8 @@
                                 }
                                 
                                 tjAction:^(NSString *yzmStr) {
-                                    SetPassController *setPassCtrl =[[SetPassController alloc]init];
-                                    [self presentViewController:setPassCtrl animated:YES completion:nil];
+                                    
                                 }];
     [self.view addSubview:JYzcView];
 }
-
 @end
