@@ -22,6 +22,7 @@
     tableView.dataSource = self;
     //seferwgferg
 //    khjk
+//    gg
     [self.view addSubview:tableView];
 }
 
