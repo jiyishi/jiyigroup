@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 #import "MainTabBarController.h"
+#import "JYIntroductionViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) JYIntroductionViewController *introductionView;
 
 @end
 
@@ -20,10 +23,48 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    MainTabBarController *mainTabCtrl = [[MainTabBarController alloc]init];
-    self.window.rootViewController = mainTabCtrl;
+    
+    
+    // 取出应用版本号
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[(NSString *)kCFBundleInfoDictionaryVersionKey];
+    
+    
+    // 判断应用程序是否是第一次进入
+    if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"saveVersion"] isEqualToString:currentVersion]) {
+        
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"saveVersion"];
+        [self gotoIntroducView];
+    } else {
+        [self gotoMainTabbarControll];
+    }
+
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)gotoIntroducView
+{
+    NSArray *coverImageNames = @[@"img_index_01txt", @"img_index_02txt", @"img_index_03txt"];
+    NSArray *backgroundImageNames = @[@"img_index_01bg", @"img_index_02bg", @"img_index_03bg"];
+    self.introductionView = [[JYIntroductionViewController alloc] initWithCoverImageNames:coverImageNames backgroundImageNames:backgroundImageNames];
+    
+    [self.window addSubview:self.introductionView.view];
+    
+    __weak AppDelegate *weakSelf = self;
+    self.introductionView.didSelectedEnter = ^() {
+        [weakSelf.introductionView.view removeFromSuperview];
+        weakSelf.introductionView = nil;
+        
+        // enter main view , write your code ...
+        [weakSelf gotoMainTabbarControll];
+    };
+
+}
+
+-(void)gotoMainTabbarControll
+{
+    MainTabBarController *mainTabCtrl = [[MainTabBarController alloc]init];
+    self.window.rootViewController = mainTabCtrl;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
