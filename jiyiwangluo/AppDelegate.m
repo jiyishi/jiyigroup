@@ -34,8 +34,8 @@
         
         [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"saveVersion"];
         [self gotoIntroducView];
-    } else {
-        [self gotoMainTabbarControll];
+    }else {
+        [self gotoIntroducView];
     }
 
     [self.window makeKeyAndVisible];
@@ -52,19 +52,27 @@
     
     __weak AppDelegate *weakSelf = self;
     self.introductionView.didSelectedEnter = ^() {
-        [weakSelf.introductionView.view removeFromSuperview];
-        weakSelf.introductionView = nil;
-        
+        [UIView animateWithDuration:1.0f animations:^{
+            weakSelf.introductionView.view.alpha = 0;
+        } completion:^(BOOL finished) {
+            [weakSelf.introductionView.view removeFromSuperview];
+            weakSelf.introductionView = nil;
+            MainTabBarController *mainTabCtrl = [[MainTabBarController alloc]init];
+            weakSelf.window.rootViewController = mainTabCtrl;
+        }];
+
         // enter main view , write your code ...
-        [weakSelf gotoMainTabbarControll];
     };
 
 }
 
 -(void)gotoMainTabbarControll
 {
-    MainTabBarController *mainTabCtrl = [[MainTabBarController alloc]init];
-    self.window.rootViewController = mainTabCtrl;
+    
+        MainTabBarController *mainTabCtrl = [[MainTabBarController alloc]init];
+        self.window.rootViewController = mainTabCtrl;
+
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

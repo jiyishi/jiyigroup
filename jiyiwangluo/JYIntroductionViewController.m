@@ -69,7 +69,25 @@
     self.enterButton.alpha = 0;
     [self.view addSubview:self.enterButton];
     
+    UIButton* registerButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    registerButton.frame = [self frameOfRegisterButton:registerButton];
+    registerButton.alpha = 0;
+    [registerButton setTitle:@"注册" forState:UIControlStateNormal];
+    registerButton.layer.masksToBounds = YES;
+    registerButton.layer.cornerRadius = 40;
+    registerButton.layer.borderWidth = 1;
+    registerButton.tag = 1000;
+    registerButton.titleLabel.font = JYFont(18.0f);
+    [registerButton addTarget:self action:@selector(registerView) forControlEvents:UIControlEventTouchUpInside];
+    registerButton.layer.borderColor = [UIColor grayColor].CGColor;
+    [self.view addSubview:registerButton];
+    
     [self reloadPages];
+}
+
+-(void)registerView
+{
+    
 }
 
 - (void)addBackgroundViews
@@ -102,6 +120,8 @@
 
     // fix enterButton can not presenting if ScrollView have only one page
     if (self.pageControl.numberOfPages == 1) {
+        UIButton* registerButton = (UIButton *)[self.view viewWithTag:1000];
+        registerButton.alpha = 1;
         self.enterButton.alpha = 1;
         self.pageControl.alpha = 0;
     }
@@ -125,6 +145,16 @@
     }
     return CGRectMake(self.view.frame.size.width / 2 - size.width / 2, self.pageControl.frame.origin.y - size.height, size.width, size.height);
 }
+
+- (CGRect)frameOfRegisterButton:(UIButton *)button
+{
+    CGSize size = button.bounds.size;
+    if (CGSizeEqualToSize(size, CGSizeZero)) {
+        size = CGSizeMake(self.view.frame.size.width * 0.6, 40);
+    }
+    return CGRectMake(self.view.frame.size.width -90, 30, 80, 80);
+}
+
 
 #pragma mark - UIScrollViewDelegate
 
@@ -173,11 +203,14 @@
 
 - (void)pagingScrollViewDidChangePages:(UIScrollView *)pagingScrollView
 {
+    UIButton* registerButton = (UIButton *)[self.view viewWithTag:1000];
     if ([self isLast:self.pageControl]) {
         if (self.pageControl.alpha == 1) {
+            registerButton.alpha = 0;
             self.enterButton.alpha = 0;
             
             [UIView animateWithDuration:0.4 animations:^{
+                registerButton.alpha = 1;
                 self.enterButton.alpha = 1;
                 self.pageControl.alpha = 0;
             }];
@@ -185,6 +218,7 @@
     } else {
         if (self.pageControl.alpha == 0) {
             [UIView animateWithDuration:0.4 animations:^{
+                registerButton.alpha = 0;
                 self.enterButton.alpha = 0;
                 self.pageControl.alpha = 1;
             }];
