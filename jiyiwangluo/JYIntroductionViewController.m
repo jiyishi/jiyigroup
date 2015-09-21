@@ -6,6 +6,7 @@
 //
 
 #import "JYIntroductionViewController.h"
+#import "JYController.h"
 
 @interface JYIntroductionViewController () <UIScrollViewDelegate>
 
@@ -87,7 +88,8 @@
 
 -(void)registerView
 {
-    
+    JYController *registerControl = [[JYController alloc]init];
+    [self presentViewController:registerControl animated:YES completion:nil];
 }
 
 - (void)addBackgroundViews
