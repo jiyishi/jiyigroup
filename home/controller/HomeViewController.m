@@ -20,6 +20,7 @@
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, JYWidth, 667-20) style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
+//    ghhjkqwe
     [self.view addSubview:tableView];
 }
 
