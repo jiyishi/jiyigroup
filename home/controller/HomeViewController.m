@@ -21,6 +21,7 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     //seferwgferg
+//    khjk
     [self.view addSubview:tableView];
 }
 
