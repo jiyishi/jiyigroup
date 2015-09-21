@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04576E281BA6BBBC00B08BFC /* AFHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04576E271BA6BBBC00B08BFC /* AFHttpManager.m */; };
 		046AC9FB1BAFC8CC00FF09C2 /* JYIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC9FA1BAFC8CC00FF09C2 /* JYIntroductionViewController.m */; };
-		046ACA1E1BAFDE0900FF09C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ACA1D1BAFDE0900FF09C2 /* ViewController.m */; };
 		04BBF35B1BA181CC00C4DD7A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBF35A1BA181CC00C4DD7A /* libsqlite3.dylib */; };
 		04BBF3921BA1822200C4DD7A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF35E1BA1822200C4DD7A /* AFHTTPRequestOperation.m */; };
 		04BBF3931BA1822200C4DD7A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF3601BA1822200C4DD7A /* AFHTTPRequestOperationManager.m */; };
@@ -75,8 +74,6 @@
 		04576E271BA6BBBC00B08BFC /* AFHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHttpManager.m; sourceTree = "<group>"; };
 		046AC9F91BAFC8CC00FF09C2 /* JYIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYIntroductionViewController.h; sourceTree = "<group>"; };
 		046AC9FA1BAFC8CC00FF09C2 /* JYIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYIntroductionViewController.m; sourceTree = "<group>"; };
-		046ACA1C1BAFDE0900FF09C2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../引导页/Demo/Objective-C/IntroductionView/ViewController.h"; sourceTree = "<group>"; };
-		046ACA1D1BAFDE0900FF09C2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../引导页/Demo/Objective-C/IntroductionView/ViewController.m"; sourceTree = "<group>"; };
 		04BBF35A1BA181CC00C4DD7A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		04BBF35D1BA1822200C4DD7A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		04BBF35E1BA1822200C4DD7A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -196,6 +193,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046ACA1F1BAFDF9800FF09C2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		046ACA201BAFDFC100FF09C2 /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = other;
+			path = controller/other;
+			sourceTree = "<group>";
+		};
+		046ACA211BAFDFC100FF09C2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			path = controller/view;
+			sourceTree = "<group>";
+		};
+		046ACA221BAFE01300FF09C2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		046ACA231BAFE01300FF09C2 /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		046ACA241BAFE01300FF09C2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		046ACA251BAFE02200FF09C2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		046ACA261BAFE02200FF09C2 /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		046ACA271BAFE02200FF09C2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		046ACA281BAFE03000FF09C2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		046ACA291BAFE03000FF09C2 /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		046ACA2A1BAFE03000FF09C2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		046ACA2B1BAFE06200FF09C2 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		04BBF35C1BA1822200C4DD7A /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,11 +394,11 @@
 			isa = PBXGroup;
 			children = (
 				04BBF35A1BA181CC00C4DD7A /* libsqlite3.dylib */,
+				046ACA2B1BAFE06200FF09C2 /* image */,
 				04D737661BA1606D009D2400 /* home */,
 				04D737611BA1606D009D2400 /* calendar */,
 				04D7376C1BA1606D009D2400 /* information */,
 				04D737711BA1606D009D2400 /* mine */,
-				04D7376B1BA1606D009D2400 /* image */,
 				04D737761BA1606D009D2400 /* other */,
 				04D737291BA15C62009D2400 /* jiyiwangluo */,
 				04D737461BA15C62009D2400 /* jiyiwangluoTests */,
@@ -372,10 +462,10 @@
 		04D737611BA1606D009D2400 /* calendar */ = {
 			isa = PBXGroup;
 			children = (
+				046ACA201BAFDFC100FF09C2 /* other */,
+				046ACA211BAFDFC100FF09C2 /* view */,
+				046ACA1F1BAFDF9800FF09C2 /* model */,
 				04D737621BA1606D009D2400 /* controller */,
-				04D737631BA1606D009D2400 /* model */,
-				04D737641BA1606D009D2400 /* other */,
-				04D737651BA1606D009D2400 /* view */,
 			);
 			path = calendar;
 			sourceTree = "<group>";
@@ -389,34 +479,13 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		04D737631BA1606D009D2400 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		04D737641BA1606D009D2400 /* other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = other;
-			sourceTree = "<group>";
-		};
-		04D737651BA1606D009D2400 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
 		04D737661BA1606D009D2400 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				046ACA221BAFE01300FF09C2 /* model */,
+				046ACA231BAFE01300FF09C2 /* other */,
+				046ACA241BAFE01300FF09C2 /* view */,
 				04D737671BA1606D009D2400 /* controller */,
-				04D737681BA1606D009D2400 /* model */,
-				04D737691BA1606D009D2400 /* other */,
-				04D7376A1BA1606D009D2400 /* view */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -430,43 +499,13 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		04D737681BA1606D009D2400 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		04D737691BA1606D009D2400 /* other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = other;
-			sourceTree = "<group>";
-		};
-		04D7376A1BA1606D009D2400 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				046ACA1C1BAFDE0900FF09C2 /* ViewController.h */,
-				046ACA1D1BAFDE0900FF09C2 /* ViewController.m */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		04D7376B1BA1606D009D2400 /* image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
 		04D7376C1BA1606D009D2400 /* information */ = {
 			isa = PBXGroup;
 			children = (
+				046ACA251BAFE02200FF09C2 /* model */,
+				046ACA261BAFE02200FF09C2 /* other */,
+				046ACA271BAFE02200FF09C2 /* view */,
 				04D7376D1BA1606D009D2400 /* controller */,
-				04D7376E1BA1606D009D2400 /* model */,
-				04D7376F1BA1606D009D2400 /* other */,
-				04D737701BA1606D009D2400 /* view */,
 			);
 			path = information;
 			sourceTree = "<group>";
@@ -480,34 +519,13 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		04D7376E1BA1606D009D2400 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		04D7376F1BA1606D009D2400 /* other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = other;
-			sourceTree = "<group>";
-		};
-		04D737701BA1606D009D2400 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
 		04D737711BA1606D009D2400 /* mine */ = {
 			isa = PBXGroup;
 			children = (
+				046ACA281BAFE03000FF09C2 /* model */,
+				046ACA291BAFE03000FF09C2 /* other */,
+				046ACA2A1BAFE03000FF09C2 /* view */,
 				04D737721BA1606D009D2400 /* controller */,
-				04D737731BA1606D009D2400 /* model */,
-				04D737741BA1606D009D2400 /* other */,
-				04D737751BA1606D009D2400 /* view */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -519,27 +537,6 @@
 				04D737931BA17FBA009D2400 /* MineViewController.m */,
 			);
 			path = controller;
-			sourceTree = "<group>";
-		};
-		04D737731BA1606D009D2400 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		04D737741BA1606D009D2400 /* other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = other;
-			sourceTree = "<group>";
-		};
-		04D737751BA1606D009D2400 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		04D737761BA1606D009D2400 /* other */ = {
@@ -720,7 +717,6 @@
 				04D7377D1BA175B3009D2400 /* MainTabBarController.m in Sources */,
 				04D737A11BA18064009D2400 /* FMDatabaseAdditions.m in Sources */,
 				04BBF39B1BA1822200C4DD7A /* MKAnnotationView+WebCache.m in Sources */,
-				046ACA1E1BAFDE0900FF09C2 /* ViewController.m in Sources */,
 				04D7372D1BA15C62009D2400 /* main.m in Sources */,
 				04BBF3A01BA1822200C4DD7A /* SDWebImageDownloader.m in Sources */,
 				04BBF3A41BA1822200C4DD7A /* UIButton+WebCache.m in Sources */,
