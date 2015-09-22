@@ -63,9 +63,14 @@
 		04D737A21BA18064009D2400 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379B1BA18064009D2400 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A31BA18064009D2400 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A41BA18064009D2400 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379F1BA18064009D2400 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+<<<<<<< HEAD
 		9FEDECCA1BB0FDA00047F4CF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECC91BB0FDA00047F4CF /* SearchViewController.m */; };
 		9FEDECCD1BB1222E0047F4CF /* ClothesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECCC1BB1222E0047F4CF /* ClothesModel.m */; };
 		9FEDECD11BB123930047F4CF /* ClothesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECCF1BB123930047F4CF /* ClothesCell.m */; };
+=======
+		04D9F8111BB0F21E004D10B2 /* LeftInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9F8101BB0F21E004D10B2 /* LeftInfoViewController.m */; };
+		04D9F81E1BB14D88004D10B2 /* JKSideSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9F81D1BB14D88004D10B2 /* JKSideSlipView.m */; };
+>>>>>>> origin/taoyan
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,12 +198,19 @@
 		04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		04D7379E1BA18064009D2400 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		04D7379F1BA18064009D2400 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9FEDECC81BB0FDA00047F4CF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		9FEDECC91BB0FDA00047F4CF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		9FEDECCB1BB1222E0047F4CF /* ClothesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClothesModel.h; path = home/controller/ClothesModel.h; sourceTree = SOURCE_ROOT; };
 		9FEDECCC1BB1222E0047F4CF /* ClothesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClothesModel.m; path = home/controller/ClothesModel.m; sourceTree = SOURCE_ROOT; };
 		9FEDECCE1BB123930047F4CF /* ClothesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClothesCell.h; path = home/controller/ClothesCell.h; sourceTree = SOURCE_ROOT; };
 		9FEDECCF1BB123930047F4CF /* ClothesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClothesCell.m; path = home/controller/ClothesCell.m; sourceTree = SOURCE_ROOT; };
+=======
+		04D9F80F1BB0F21E004D10B2 /* LeftInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftInfoViewController.h; sourceTree = "<group>"; };
+		04D9F8101BB0F21E004D10B2 /* LeftInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftInfoViewController.m; sourceTree = "<group>"; };
+		04D9F81C1BB14D88004D10B2 /* JKSideSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSideSlipView.h; sourceTree = "<group>"; };
+		04D9F81D1BB14D88004D10B2 /* JKSideSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSideSlipView.m; sourceTree = "<group>"; };
+>>>>>>> origin/taoyan
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,13 +292,6 @@
 			children = (
 			);
 			path = other;
-			sourceTree = "<group>";
-		};
-		046ACA271BAFE02200FF09C2 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		046ACA281BAFE03000FF09C2 /* model */ = {
@@ -554,9 +559,9 @@
 		04D7376C1BA1606D009D2400 /* information */ = {
 			isa = PBXGroup;
 			children = (
+				04D9F81B1BB14D81004D10B2 /* view */,
 				046ACA251BAFE02200FF09C2 /* model */,
 				046ACA261BAFE02200FF09C2 /* other */,
-				046ACA271BAFE02200FF09C2 /* view */,
 				04D7376D1BA1606D009D2400 /* controller */,
 			);
 			path = information;
@@ -567,6 +572,8 @@
 			children = (
 				04D7378F1BA17FA7009D2400 /* InformationViewController.h */,
 				04D737901BA17FA7009D2400 /* InformationViewController.m */,
+				04D9F80F1BB0F21E004D10B2 /* LeftInfoViewController.h */,
+				04D9F8101BB0F21E004D10B2 /* LeftInfoViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -634,6 +641,15 @@
 				04D7379F1BA18064009D2400 /* FMResultSet.m */,
 			);
 			path = fmdb;
+			sourceTree = "<group>";
+		};
+		04D9F81B1BB14D81004D10B2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				04D9F81C1BB14D88004D10B2 /* JKSideSlipView.h */,
+				04D9F81D1BB14D88004D10B2 /* JKSideSlipView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -763,10 +779,17 @@
 				04BBF3BE1BA1828C00C4DD7A /* UIBarButtonItem+extension.m in Sources */,
 				04D737941BA17FBA009D2400 /* MineViewController.m in Sources */,
 				046ACA321BAFF27100FF09C2 /* JYRegisterView.m in Sources */,
+<<<<<<< HEAD
 				9FEDECD11BB123930047F4CF /* ClothesCell.m in Sources */,
 				04BBF3A51BA1822200C4DD7A /* UIImage+GIF.m in Sources */,
 				04BBF3A61BA1822200C4DD7A /* UIImage+MultiFormat.m in Sources */,
 				9FEDECCD1BB1222E0047F4CF /* ClothesModel.m in Sources */,
+=======
+				04D9F81E1BB14D88004D10B2 /* JKSideSlipView.m in Sources */,
+				04BBF3A51BA1822200C4DD7A /* UIImage+GIF.m in Sources */,
+				04BBF3A61BA1822200C4DD7A /* UIImage+MultiFormat.m in Sources */,
+				04D9F8111BB0F21E004D10B2 /* LeftInfoViewController.m in Sources */,
+>>>>>>> origin/taoyan
 				04D737911BA17FA7009D2400 /* InformationViewController.m in Sources */,
 				04BBF3AD1BA1824900C4DD7A /* ProgressHUD.m in Sources */,
 				9FEDECCA1BB0FDA00047F4CF /* SearchViewController.m in Sources */,

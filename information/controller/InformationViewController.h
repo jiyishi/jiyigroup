@@ -10,4 +10,6 @@
 
 @interface InformationViewController : UIViewController
 
+-(void)switchAction:(id)sender;
+
 @end

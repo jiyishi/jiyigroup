@@ -38,7 +38,7 @@
         vc.title = _titleArray[i];
         vc.view.backgroundColor=[UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f blue:arc4random()%256/255.0f alpha:0.8];
         UINavigationController *nv=[[UINavigationController alloc]initWithRootViewController:vc];
-        [arrVc addObject:nv];
+            [arrVc addObject:nv];
     }
     self.viewControllers=arrVc;
 }

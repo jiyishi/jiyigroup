@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+<<<<<<< HEAD
     self.automaticallyAdjustsScrollViewInsets = YES;
 
     //导航栏按钮
@@ -59,6 +60,8 @@
 
 -(void)informationButton{
     
+=======
+>>>>>>> origin/taoyan
 }
 
 #pragma mark -- 订单状态方法

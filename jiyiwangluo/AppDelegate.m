@@ -57,10 +57,8 @@
         } completion:^(BOOL finished) {
             [weakSelf.introductionView.view removeFromSuperview];
             weakSelf.introductionView = nil;
-            MainTabBarController *mainTabCtrl = [[MainTabBarController alloc]init];
-            weakSelf.window.rootViewController = mainTabCtrl;
         }];
-
+        [weakSelf gotoMainTabbarControll];
         // enter main view , write your code ...
     };
 
