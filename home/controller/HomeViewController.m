@@ -7,22 +7,144 @@
 //
 
 #import "HomeViewController.h"
+#import "SearchViewController.h"
+#import "ClothesCell.h"
+#import "ClothesModel.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+{
+    UIView* _menueView;
+    UIScrollView* _scrollView;
+    UIScrollView* _designerScrollView;
+    UITableView* _tableView;
+    UIView* _view;
+}
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.centerX = 0.5 * JYWidth;
-    btn.centerY = 200;
-    btn.width = 0.4 * JYWidth;
-    btn.height = 40;
+    
+    self.automaticallyAdjustsScrollViewInsets = YES;
+
+    //导航栏按钮
+    
+    UIBarButtonItem* searchButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sousuo_baitian_hit.png"] style:UIBarButtonItemStyleDone target:self action:@selector(searchButton)];
+    UIBarButtonItem* informationButton = [[UIBarButtonItem alloc] initWithTitle:@"活动" style:UIBarButtonItemStyleDone target:self action:@selector(informationButton)];
+    
+    self.navigationItem.rightBarButtonItems = @[informationButton,searchButton];
+    
+    //订单状态方法
+    
+    [self menueOrAction];
+    
+    //设计师方法
+    
+    [self designer];
+    
+    //服装展示方法
+    
+    [self closeShow];
 }
 
+#pragma mark --导航栏按钮点击事件
+
+-(void)searchButton{
+    
+    SearchViewController* searchButton = [[SearchViewController alloc]init];
+    [self.navigationController pushViewController:searchButton animated:YES];
+    
+}
+
+-(void)informationButton{
+    
+}
+
+#pragma mark -- 订单状态方法
+
+-(void)menueOrAction{
+    
+    _menueView  = [[UIView alloc]initWithFrame:CGRectMake(0, 64, JYWidth, 100)];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, JYWidth, 100)];
+    imageView.image = [UIImage imageNamed:@"00.jpg"];
+    [_menueView addSubview:imageView];
+    [self.view addSubview:_menueView];
+
+}
+
+#pragma mark -- 设计师
+
+-(void)designer{
+    
+    _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_menueView.frame), JYWidth, JYHeight-100-_menueView.frame.size.height)];
+    [self.view addSubview:_scrollView];
+    
+    _view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, JYWidth, 150)];
+    [_scrollView addSubview:_view];
+    
+    _designerScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, JYWidth, 150)];
+    _designerScrollView.bounces = NO;
+    _designerScrollView.pagingEnabled = YES;
+    _designerScrollView.showsVerticalScrollIndicator = NO;
+    [_view addSubview:_designerScrollView];
+    for (int i=0; i<5; i++) {
+        UIImageView* imageView = [[UIImageView alloc]initWithFrame:CGRectMake(JYWidth*i, 0, JYWidth, _designerScrollView.frame.size.height)];
+        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i]];
+        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(designerTouch)];
+        imageView.userInteractionEnabled = YES;
+        [imageView addGestureRecognizer:tap];
+        [_designerScrollView addSubview:imageView];
+    }
+    _designerScrollView.contentSize = CGSizeMake(JYWidth*5, 0);
+
+}
+
+#pragma mark -- 服装
+
+-(void)closeShow{
+    
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, JYWidth, JYHeight-_designerScrollView.frame.size.height-49) style:UITableViewStylePlain];
+    [_scrollView addSubview:_tableView];
+    _tableView.tableHeaderView = _view;
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+//    [_tableView registerNib:[UINib nibWithNibName:@"CloseCell" bundle:nil] forCellReuseIdentifier:@"identifier"];
+    
+}
+
+#pragma mark -- 点击设计师图片跳转
+
+-(void)designerTouch{
+    
+    NSLog(@"点击了图片");
+    
+}
+
+#pragma mark -- tableView代理
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 10;
+    
+}
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString* identifier = @"identifier";
+    ClothesCell* cell = [tableView dequeueReusableCellWithIdentifier:@"identifier"];
+    if (cell == nil) {
+        cell = [[ClothesCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    ClothesModel* model = [[ClothesModel alloc]init];
+    [cell conFig:model];
+    return cell;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 150;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

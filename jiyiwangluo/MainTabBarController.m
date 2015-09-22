@@ -45,7 +45,7 @@
 
 -(void)createTabBar
 {
-    _bgView=[[UIView alloc]initWithFrame:CGRectMake(0, 667-49, 375, 49)];
+    _bgView=[[UIView alloc]initWithFrame:CGRectMake(0, JYHeight-49, JYWidth, 49)];
     _bgView.backgroundColor=[UIColor grayColor];
     [self.view addSubview:_bgView];
     
@@ -53,7 +53,7 @@
     NSArray *imageArray = @[@"菜谱-A",@"发现-A",@"卖汤汤A",@"我的-A"];
     NSArray *selectImageArray = @[@"菜谱-B",@"发现-B",@"卖汤汤B",@"我的-B"];
     
-    CGFloat btnW=375.0f/4;
+    CGFloat btnW=JYWidth/4;
     for (int i=0; i<4; i++) {
         UIButton *btn=[MyUtil createBtnFrame:CGRectMake(btnW*i, 0, btnW, 49) image:imageArray[i] selectImage:selectImageArray[i] highlightImage:nil target:self action:@selector(btnClick:)];
         btn.tag=100+i;

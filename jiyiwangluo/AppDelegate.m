@@ -35,7 +35,7 @@
         [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"saveVersion"];
         [self gotoIntroducView];
     }else {
-        [self gotoIntroducView];
+        [self gotoMainTabbarControll];
     }
 
     [self.window makeKeyAndVisible];

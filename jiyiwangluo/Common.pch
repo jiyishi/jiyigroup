@@ -18,6 +18,7 @@
 #import "EGORefreshTableHeaderView.h"
 //网络图片
 #import "SDImageCache.h"
+#import "UIImageView+WebCache.h"
 //网络数据请求
 #import "AFHttpManager.h"
 //view类拓
