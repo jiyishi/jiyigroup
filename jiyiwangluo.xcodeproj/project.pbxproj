@@ -35,8 +35,6 @@
 		04BBF3A21BA1822200C4DD7A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF3801BA1822200C4DD7A /* SDWebImageManager.m */; };
 		04BBF3A31BA1822200C4DD7A /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF3831BA1822200C4DD7A /* SDWebImagePrefetcher.m */; };
 		04BBF3A41BA1822200C4DD7A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF3851BA1822200C4DD7A /* UIButton+WebCache.m */; };
-		04BBF3A51BA1822200C4DD7A /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF3871BA1822200C4DD7A /* UIImage+GIF.m */; };
-		04BBF3A61BA1822200C4DD7A /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF3891BA1822200C4DD7A /* UIImage+MultiFormat.m */; };
 		04BBF3A71BA1822200C4DD7A /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF38B1BA1822200C4DD7A /* UIImage+WebP.m */; };
 		04BBF3A81BA1822200C4DD7A /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF38D1BA1822200C4DD7A /* UIImageView+HighlightedWebCache.m */; };
 		04BBF3A91BA1822200C4DD7A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBF38F1BA1822200C4DD7A /* UIImageView+WebCache.m */; };
@@ -63,6 +61,11 @@
 		04D737A21BA18064009D2400 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379B1BA18064009D2400 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A31BA18064009D2400 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A41BA18064009D2400 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379F1BA18064009D2400 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FEDECDA1BB15ECD0047F4CF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECD91BB15ECD0047F4CF /* SearchViewController.m */; };
+		9FEDECDD1BB15ED90047F4CF /* ClothesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECDC1BB15ED90047F4CF /* ClothesModel.m */; };
+		9FEDECE01BB15EE20047F4CF /* ClothesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECDF1BB15EE20047F4CF /* ClothesCell.m */; };
+		9FEDECE31BB15F010047F4CF /* LeftInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECE21BB15F010047F4CF /* LeftInfoViewController.m */; };
+		9FEDECE61BB15F0D0047F4CF /* JKSideSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECE51BB15F0D0047F4CF /* JKSideSlipView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,7 +193,18 @@
 		04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		04D7379E1BA18064009D2400 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		04D7379F1BA18064009D2400 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		9FEDECD81BB15ECD0047F4CF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9FEDECD91BB15ECD0047F4CF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9FEDECDB1BB15ED90047F4CF /* ClothesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClothesModel.h; path = home/controller/ClothesModel.h; sourceTree = SOURCE_ROOT; };
+		9FEDECDC1BB15ED90047F4CF /* ClothesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClothesModel.m; path = home/controller/ClothesModel.m; sourceTree = SOURCE_ROOT; };
+		9FEDECDE1BB15EE20047F4CF /* ClothesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClothesCell.h; path = home/controller/ClothesCell.h; sourceTree = SOURCE_ROOT; };
+		9FEDECDF1BB15EE20047F4CF /* ClothesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClothesCell.m; path = home/controller/ClothesCell.m; sourceTree = SOURCE_ROOT; };
+		9FEDECE11BB15F010047F4CF /* LeftInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftInfoViewController.h; sourceTree = "<group>"; };
+		9FEDECE21BB15F010047F4CF /* LeftInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftInfoViewController.m; sourceTree = "<group>"; };
+		9FEDECE41BB15F0D0047F4CF /* JKSideSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSideSlipView.h; sourceTree = "<group>"; };
+		9FEDECE51BB15F0D0047F4CF /* JKSideSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSideSlipView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		04D737241BA15C62009D2400 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -236,8 +250,8 @@
 		046ACA221BAFE01300FF09C2 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				9FEDECCB1BB1222E0047F4CF /* ClothesModel.h */,
-				9FEDECCC1BB1222E0047F4CF /* ClothesModel.m */,
+				9FEDECDB1BB15ED90047F4CF /* ClothesModel.h */,
+				9FEDECDC1BB15ED90047F4CF /* ClothesModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -252,8 +266,8 @@
 		046ACA241BAFE01300FF09C2 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				9FEDECCE1BB123930047F4CF /* ClothesCell.h */,
-				9FEDECCF1BB123930047F4CF /* ClothesCell.m */,
+				9FEDECDE1BB15EE20047F4CF /* ClothesCell.h */,
+				9FEDECDF1BB15EE20047F4CF /* ClothesCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -527,9 +541,9 @@
 			isa = PBXGroup;
 			children = (
 				04D737891BA17F4C009D2400 /* HomeViewController.h */,
+				9FEDECD81BB15ECD0047F4CF /* SearchViewController.h */,
+				9FEDECD91BB15ECD0047F4CF /* SearchViewController.m */,
 				04D7378A1BA17F4C009D2400 /* HomeViewController.m */,
-				9FEDECC81BB0FDA00047F4CF /* SearchViewController.h */,
-				9FEDECC91BB0FDA00047F4CF /* SearchViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -548,10 +562,10 @@
 		04D7376D1BA1606D009D2400 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9FEDECE11BB15F010047F4CF /* LeftInfoViewController.h */,
+				9FEDECE21BB15F010047F4CF /* LeftInfoViewController.m */,
 				04D7378F1BA17FA7009D2400 /* InformationViewController.h */,
 				04D737901BA17FA7009D2400 /* InformationViewController.m */,
-				04D9F80F1BB0F21E004D10B2 /* LeftInfoViewController.h */,
-				04D9F8101BB0F21E004D10B2 /* LeftInfoViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -624,8 +638,8 @@
 		04D9F81B1BB14D81004D10B2 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				04D9F81C1BB14D88004D10B2 /* JKSideSlipView.h */,
-				04D9F81D1BB14D88004D10B2 /* JKSideSlipView.m */,
+				9FEDECE41BB15F0D0047F4CF /* JKSideSlipView.h */,
+				9FEDECE51BB15F0D0047F4CF /* JKSideSlipView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -737,6 +751,7 @@
 				04D737A21BA18064009D2400 /* FMDatabasePool.m in Sources */,
 				04D737A41BA18064009D2400 /* FMResultSet.m in Sources */,
 				04D737331BA15C62009D2400 /* jiyiwangluo.xcdatamodeld in Sources */,
+				9FEDECDD1BB15ED90047F4CF /* ClothesModel.m in Sources */,
 				04BBF39E1BA1822200C4DD7A /* SDWebImageCompat.m in Sources */,
 				04BBF3A11BA1822200C4DD7A /* SDWebImageDownloaderOperation.m in Sources */,
 				046ACA3B1BB002C300FF09C2 /* UserLabelViewController.m in Sources */,
@@ -750,21 +765,23 @@
 				04D737A31BA18064009D2400 /* FMDatabaseQueue.m in Sources */,
 				04BBF3B51BA1826300C4DD7A /* EGORefreshTableFooterView.m in Sources */,
 				04BBF3931BA1822200C4DD7A /* AFHTTPRequestOperationManager.m in Sources */,
+				9FEDECE61BB15F0D0047F4CF /* JKSideSlipView.m in Sources */,
 				04BBF3A81BA1822200C4DD7A /* UIImageView+HighlightedWebCache.m in Sources */,
+				9FEDECDA1BB15ECD0047F4CF /* SearchViewController.m in Sources */,
 				04D737A01BA18064009D2400 /* FMDatabase.m in Sources */,
 				04BBF3961BA1822200C4DD7A /* AFSecurityPolicy.m in Sources */,
 				046ACA3E1BB003E400FF09C2 /* LogInController.m in Sources */,
 				04BBF3BE1BA1828C00C4DD7A /* UIBarButtonItem+extension.m in Sources */,
 				04D737941BA17FBA009D2400 /* MineViewController.m in Sources */,
 				046ACA321BAFF27100FF09C2 /* JYRegisterView.m in Sources */,
-
 				04D737911BA17FA7009D2400 /* InformationViewController.m in Sources */,
+				9FEDECE31BB15F010047F4CF /* LeftInfoViewController.m in Sources */,
 				04BBF3AD1BA1824900C4DD7A /* ProgressHUD.m in Sources */,
-				9FEDECCA1BB0FDA00047F4CF /* SearchViewController.m in Sources */,
 				04BBF3BA1BA1828000C4DD7A /* UIView+Extension.m in Sources */,
 				04BBF3A71BA1822200C4DD7A /* UIImage+WebP.m in Sources */,
 				04BBF3A31BA1822200C4DD7A /* SDWebImagePrefetcher.m in Sources */,
 				04BBF3981BA1822200C4DD7A /* AFURLRequestSerialization.m in Sources */,
+				9FEDECE01BB15EE20047F4CF /* ClothesCell.m in Sources */,
 				04BBF3951BA1822200C4DD7A /* AFNetworkReachabilityManager.m in Sources */,
 				04D7377D1BA175B3009D2400 /* MainTabBarController.m in Sources */,
 				04D737A11BA18064009D2400 /* FMDatabaseAdditions.m in Sources */,
