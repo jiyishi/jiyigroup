@@ -63,6 +63,8 @@
 		04D737A21BA18064009D2400 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379B1BA18064009D2400 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A31BA18064009D2400 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A41BA18064009D2400 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379F1BA18064009D2400 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04D9F8111BB0F21E004D10B2 /* LeftInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9F8101BB0F21E004D10B2 /* LeftInfoViewController.m */; };
+		04D9F81E1BB14D88004D10B2 /* JKSideSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9F81D1BB14D88004D10B2 /* JKSideSlipView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +192,10 @@
 		04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		04D7379E1BA18064009D2400 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		04D7379F1BA18064009D2400 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		04D9F80F1BB0F21E004D10B2 /* LeftInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftInfoViewController.h; sourceTree = "<group>"; };
+		04D9F8101BB0F21E004D10B2 /* LeftInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftInfoViewController.m; sourceTree = "<group>"; };
+		04D9F81C1BB14D88004D10B2 /* JKSideSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSideSlipView.h; sourceTree = "<group>"; };
+		04D9F81D1BB14D88004D10B2 /* JKSideSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSideSlipView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,13 +273,6 @@
 			children = (
 			);
 			path = other;
-			sourceTree = "<group>";
-		};
-		046ACA271BAFE02200FF09C2 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		046ACA281BAFE03000FF09C2 /* model */ = {
@@ -539,9 +538,9 @@
 		04D7376C1BA1606D009D2400 /* information */ = {
 			isa = PBXGroup;
 			children = (
+				04D9F81B1BB14D81004D10B2 /* view */,
 				046ACA251BAFE02200FF09C2 /* model */,
 				046ACA261BAFE02200FF09C2 /* other */,
-				046ACA271BAFE02200FF09C2 /* view */,
 				04D7376D1BA1606D009D2400 /* controller */,
 			);
 			path = information;
@@ -552,6 +551,8 @@
 			children = (
 				04D7378F1BA17FA7009D2400 /* InformationViewController.h */,
 				04D737901BA17FA7009D2400 /* InformationViewController.m */,
+				04D9F80F1BB0F21E004D10B2 /* LeftInfoViewController.h */,
+				04D9F8101BB0F21E004D10B2 /* LeftInfoViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -619,6 +620,15 @@
 				04D7379F1BA18064009D2400 /* FMResultSet.m */,
 			);
 			path = fmdb;
+			sourceTree = "<group>";
+		};
+		04D9F81B1BB14D81004D10B2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				04D9F81C1BB14D88004D10B2 /* JKSideSlipView.h */,
+				04D9F81D1BB14D88004D10B2 /* JKSideSlipView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -748,8 +758,10 @@
 				04BBF3BE1BA1828C00C4DD7A /* UIBarButtonItem+extension.m in Sources */,
 				04D737941BA17FBA009D2400 /* MineViewController.m in Sources */,
 				046ACA321BAFF27100FF09C2 /* JYRegisterView.m in Sources */,
+				04D9F81E1BB14D88004D10B2 /* JKSideSlipView.m in Sources */,
 				04BBF3A51BA1822200C4DD7A /* UIImage+GIF.m in Sources */,
 				04BBF3A61BA1822200C4DD7A /* UIImage+MultiFormat.m in Sources */,
+				04D9F8111BB0F21E004D10B2 /* LeftInfoViewController.m in Sources */,
 				04D737911BA17FA7009D2400 /* InformationViewController.m in Sources */,
 				04BBF3AD1BA1824900C4DD7A /* ProgressHUD.m in Sources */,
 				04BBF3BA1BA1828000C4DD7A /* UIView+Extension.m in Sources */,

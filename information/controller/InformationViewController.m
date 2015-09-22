@@ -7,8 +7,13 @@
 //
 
 #import "InformationViewController.h"
+#import "JKSideSlipView.h"
+#import "UIBarButtonItem+extension.h"
 
 @interface InformationViewController ()
+{
+    JKSideSlipView *_sideSlipView;
+}
 
 @end
 
@@ -17,6 +22,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.y = 20;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"shuye"]];
+    
+    _sideSlipView = [[JKSideSlipView alloc]initWithSender:self];
+    _sideSlipView.backgroundColor = [UIColor redColor];
+    
+    UIBarButtonItem  *leftBtnItem = [UIBarButtonItem itemWithTarget:self action:@selector(switchAction:) image:@"jia" highImage:@"jia_h"];
+    self.navigationItem.leftBarButtonItem = leftBtnItem;
+    
+    UIButton *nextBtn = [MyUtil createBtnFrame:CGRectMake(100, 100, 100, 40) title:@"下一页" target:self action:@selector(nextBtnAction:)];
+    [self.view addSubview:nextBtn];
+}
+
+-(void)switchAction:(id)sender
+{
+    [_sideSlipView switchMenu];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,11 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.centerX = 0.5 * JYWidth;
-    btn.centerY = 200;
-    btn.width = 0.4 * JYWidth;
-    btn.height = 40;
+    
 }
 
 - (void)didReceiveMemoryWarning {
