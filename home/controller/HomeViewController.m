@@ -10,7 +10,9 @@
 #import "SearchViewController.h"
 #import "ClothesCell.h"
 #import "ClothesModel.h"
-
+#import "ClothDetailController.h"
+#import "DesignerViewController.h"
+#import "UIBarButtonItem+Badge.h"
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UIView* _menueView;
@@ -22,7 +24,6 @@
 @end
 
 @implementation HomeViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -31,7 +32,14 @@
     //导航栏按钮
     
     UIBarButtonItem* searchButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sousuo_baitian_hit.png"] style:UIBarButtonItemStyleDone target:self action:@selector(searchButton)];
-    UIBarButtonItem* informationButton = [[UIBarButtonItem alloc] initWithTitle:@"活动" style:UIBarButtonItemStyleDone target:self action:@selector(informationButton)];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(10,10,30, 30);
+    [button addTarget:self action:@selector(informationButton) forControlEvents:UIControlEventTouchDown];
+    [button setBackgroundImage:[UIImage imageNamed:@"dvq"] forState:UIControlStateNormal];
+    UIBarButtonItem *informationButton = [[UIBarButtonItem alloc] initWithCustomView:button];
+    informationButton.badgeValue = @"1";
+    informationButton.badgeBGColor = self.navigationController.navigationBar.tintColor;
     
     self.navigationItem.rightBarButtonItems = @[informationButton,searchButton];
     
@@ -85,7 +93,6 @@
     
     _designerScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, JYWidth, 150)];
     _designerScrollView.bounces = NO;
-    _designerScrollView.pagingEnabled = YES;
     _designerScrollView.showsVerticalScrollIndicator = NO;
     [_view addSubview:_designerScrollView];
     for (int i=0; i<5; i++) {
@@ -93,6 +100,7 @@
         imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i]];
         UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(designerTouch)];
         imageView.userInteractionEnabled = YES;
+        imageView.tag = 200 + i;
         [imageView addGestureRecognizer:tap];
         [_designerScrollView addSubview:imageView];
     }
@@ -117,7 +125,9 @@
 
 -(void)designerTouch{
     
-    NSLog(@"点击了图片");
+//    UIImageView* imageView = (UIImageView*)[self.view viewWithTag:200+i];
+    DesignerViewController* designer = [[DesignerViewController alloc]init];
+    [self presentViewController:designer animated:YES completion:nil];
     
 }
 
@@ -144,6 +154,8 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    ClothDetailController* clothDetail = [[ClothDetailController alloc]init];
+    [self.navigationController pushViewController:clothDetail animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

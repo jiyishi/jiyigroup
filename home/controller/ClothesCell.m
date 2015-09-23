@@ -13,6 +13,9 @@
 {
     UIButton* _loveButton;
     BOOL _clickColor;
+    UIImageView* _backImageView;
+    UILabel* _clothNameLabel;
+    UILabel* _designerNameLabel;
     
 }
 - (void)awakeFromNib {
@@ -31,9 +34,9 @@
 }
 -(void)createUI{
     
-    UIImageView* backImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, JYWidth, 150)];
-    [backImageView sd_setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"2.png"]];
-    [self addSubview:backImageView];
+    _backImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, JYWidth, 150)];
+    [_backImageView sd_setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"2.png"]];
+    [self addSubview:_backImageView];
     
     _loveButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _loveButton.frame = CGRectMake(JYWidth-40, 10, 30, 30);
@@ -41,22 +44,22 @@
     [_loveButton addTarget:self action:@selector(loveClick) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_loveButton];
     
-    UIView* bgView = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(backImageView.frame)-50, JYWidth, 50)];
+    UIView* bgView = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_backImageView.frame)-50, JYWidth, 50)];
     bgView.backgroundColor = [UIColor grayColor];
     bgView.alpha = 0.4;
     [self addSubview:bgView];
     
-    UILabel* clothNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(5, 2, JYWidth, 23)];
-    clothNameLabel.text = @"简介";
-    clothNameLabel.font = JYFont(13.0f);
-    clothNameLabel.textColor = [UIColor redColor];
-    [bgView addSubview:clothNameLabel];
+    _clothNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(5, 2, JYWidth, 23)];
+    _clothNameLabel.text = @"简介";
+    _clothNameLabel.font = JYFont(13.0f);
+    _clothNameLabel.textColor = [UIColor redColor];
+    [bgView addSubview:_clothNameLabel];
     
-    UILabel* designerNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(clothNameLabel.frame.origin.x, CGRectGetMaxY(clothNameLabel.frame), JYWidth, 23)];
-    designerNameLabel.text = @"提莫";
-    designerNameLabel.font = JYFont(13.0f);
-    designerNameLabel.textColor = [UIColor redColor];
-    [bgView addSubview:designerNameLabel];
+    _designerNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(_clothNameLabel.frame.origin.x, CGRectGetMaxY(_clothNameLabel.frame), JYWidth, 23)];
+    _designerNameLabel.text = @"提莫";
+    _designerNameLabel.font = JYFont(13.0f);
+    _designerNameLabel.textColor = [UIColor redColor];
+    [bgView addSubview:_designerNameLabel];
     
 }
 

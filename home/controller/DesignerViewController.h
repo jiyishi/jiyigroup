@@ -1,5 +1,5 @@
 //
-//  SearchViewController.h
+//  DesignerViewController.h
 //  jiyiwangluo
 //
 //  Created by Zen Shen on 15/9/23.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
+@interface DesignerViewController : UIViewController
 
 @end

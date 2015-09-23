@@ -61,11 +61,15 @@
 		04D737A21BA18064009D2400 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379B1BA18064009D2400 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A31BA18064009D2400 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A41BA18064009D2400 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379F1BA18064009D2400 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9FEDECDA1BB15ECD0047F4CF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECD91BB15ECD0047F4CF /* SearchViewController.m */; };
+		9FED46731BB2351D00D74A82 /* ClothDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46721BB2351D00D74A82 /* ClothDetailController.m */; };
+		9FED46761BB2361800D74A82 /* DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46751BB2361800D74A82 /* DesignerViewController.m */; };
+		9FED467C1BB2446F00D74A82 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED467B1BB2446F00D74A82 /* SearchViewController.m */; };
+		9FED467F1BB2562300D74A82 /* HistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED467E1BB2562300D74A82 /* HistoryManager.m */; };
 		9FEDECDD1BB15ED90047F4CF /* ClothesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECDC1BB15ED90047F4CF /* ClothesModel.m */; };
 		9FEDECE01BB15EE20047F4CF /* ClothesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECDF1BB15EE20047F4CF /* ClothesCell.m */; };
 		9FEDECE31BB15F010047F4CF /* LeftInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECE21BB15F010047F4CF /* LeftInfoViewController.m */; };
 		9FEDECE61BB15F0D0047F4CF /* JKSideSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDECE51BB15F0D0047F4CF /* JKSideSlipView.m */; };
+		9FFD64701BB2A0A1001E2A27 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD646F1BB2A0A1001E2A27 /* UIBarButtonItem+Badge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,8 +197,14 @@
 		04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		04D7379E1BA18064009D2400 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		04D7379F1BA18064009D2400 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		9FEDECD81BB15ECD0047F4CF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		9FEDECD91BB15ECD0047F4CF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9FED46711BB2351D00D74A82 /* ClothDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothDetailController.h; sourceTree = "<group>"; };
+		9FED46721BB2351D00D74A82 /* ClothDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothDetailController.m; sourceTree = "<group>"; };
+		9FED46741BB2361800D74A82 /* DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewController.h; sourceTree = "<group>"; };
+		9FED46751BB2361800D74A82 /* DesignerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignerViewController.m; sourceTree = "<group>"; };
+		9FED467A1BB2446F00D74A82 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9FED467B1BB2446F00D74A82 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9FED467D1BB2562300D74A82 /* HistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryManager.h; sourceTree = "<group>"; };
+		9FED467E1BB2562300D74A82 /* HistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryManager.m; sourceTree = "<group>"; };
 		9FEDECDB1BB15ED90047F4CF /* ClothesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClothesModel.h; path = home/controller/ClothesModel.h; sourceTree = SOURCE_ROOT; };
 		9FEDECDC1BB15ED90047F4CF /* ClothesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClothesModel.m; path = home/controller/ClothesModel.m; sourceTree = SOURCE_ROOT; };
 		9FEDECDE1BB15EE20047F4CF /* ClothesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClothesCell.h; path = home/controller/ClothesCell.h; sourceTree = SOURCE_ROOT; };
@@ -203,6 +213,8 @@
 		9FEDECE21BB15F010047F4CF /* LeftInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftInfoViewController.m; sourceTree = "<group>"; };
 		9FEDECE41BB15F0D0047F4CF /* JKSideSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSideSlipView.h; sourceTree = "<group>"; };
 		9FEDECE51BB15F0D0047F4CF /* JKSideSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSideSlipView.m; sourceTree = "<group>"; };
+		9FFD646E1BB2A0A1001E2A27 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		9FFD646F1BB2A0A1001E2A27 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +477,10 @@
 		04D737291BA15C62009D2400 /* jiyiwangluo */ = {
 			isa = PBXGroup;
 			children = (
+				9FFD646E1BB2A0A1001E2A27 /* UIBarButtonItem+Badge.h */,
+				9FFD646F1BB2A0A1001E2A27 /* UIBarButtonItem+Badge.m */,
+				9FED467D1BB2562300D74A82 /* HistoryManager.h */,
+				9FED467E1BB2562300D74A82 /* HistoryManager.m */,
 				046AC9F91BAFC8CC00FF09C2 /* JYIntroductionViewController.h */,
 				046AC9FA1BAFC8CC00FF09C2 /* JYIntroductionViewController.m */,
 				04D7377B1BA175B3009D2400 /* MainTabBarController.h */,
@@ -541,9 +557,13 @@
 			isa = PBXGroup;
 			children = (
 				04D737891BA17F4C009D2400 /* HomeViewController.h */,
-				9FEDECD81BB15ECD0047F4CF /* SearchViewController.h */,
-				9FEDECD91BB15ECD0047F4CF /* SearchViewController.m */,
 				04D7378A1BA17F4C009D2400 /* HomeViewController.m */,
+				9FED467A1BB2446F00D74A82 /* SearchViewController.h */,
+				9FED467B1BB2446F00D74A82 /* SearchViewController.m */,
+				9FED46711BB2351D00D74A82 /* ClothDetailController.h */,
+				9FED46721BB2351D00D74A82 /* ClothDetailController.m */,
+				9FED46741BB2361800D74A82 /* DesignerViewController.h */,
+				9FED46751BB2361800D74A82 /* DesignerViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -749,6 +769,7 @@
 				04D737881BA17BA9009D2400 /* MyUtil.m in Sources */,
 				04BBF3A21BA1822200C4DD7A /* SDWebImageManager.m in Sources */,
 				04D737A21BA18064009D2400 /* FMDatabasePool.m in Sources */,
+				9FED46761BB2361800D74A82 /* DesignerViewController.m in Sources */,
 				04D737A41BA18064009D2400 /* FMResultSet.m in Sources */,
 				04D737331BA15C62009D2400 /* jiyiwangluo.xcdatamodeld in Sources */,
 				9FEDECDD1BB15ED90047F4CF /* ClothesModel.m in Sources */,
@@ -756,6 +777,7 @@
 				04BBF3A11BA1822200C4DD7A /* SDWebImageDownloaderOperation.m in Sources */,
 				046ACA3B1BB002C300FF09C2 /* UserLabelViewController.m in Sources */,
 				04576E281BA6BBBC00B08BFC /* AFHttpManager.m in Sources */,
+				9FED467F1BB2562300D74A82 /* HistoryManager.m in Sources */,
 				046ACA351BAFF2E000FF09C2 /* JYController.m in Sources */,
 				04BBF3991BA1822200C4DD7A /* AFURLResponseSerialization.m in Sources */,
 				04BBF3971BA1822200C4DD7A /* AFURLConnectionOperation.m in Sources */,
@@ -767,7 +789,7 @@
 				04BBF3931BA1822200C4DD7A /* AFHTTPRequestOperationManager.m in Sources */,
 				9FEDECE61BB15F0D0047F4CF /* JKSideSlipView.m in Sources */,
 				04BBF3A81BA1822200C4DD7A /* UIImageView+HighlightedWebCache.m in Sources */,
-				9FEDECDA1BB15ECD0047F4CF /* SearchViewController.m in Sources */,
+				9FED467C1BB2446F00D74A82 /* SearchViewController.m in Sources */,
 				04D737A01BA18064009D2400 /* FMDatabase.m in Sources */,
 				04BBF3961BA1822200C4DD7A /* AFSecurityPolicy.m in Sources */,
 				046ACA3E1BB003E400FF09C2 /* LogInController.m in Sources */,
@@ -778,6 +800,7 @@
 				9FEDECE31BB15F010047F4CF /* LeftInfoViewController.m in Sources */,
 				04BBF3AD1BA1824900C4DD7A /* ProgressHUD.m in Sources */,
 				04BBF3BA1BA1828000C4DD7A /* UIView+Extension.m in Sources */,
+				9FED46731BB2351D00D74A82 /* ClothDetailController.m in Sources */,
 				04BBF3A71BA1822200C4DD7A /* UIImage+WebP.m in Sources */,
 				04BBF3A31BA1822200C4DD7A /* SDWebImagePrefetcher.m in Sources */,
 				04BBF3981BA1822200C4DD7A /* AFURLRequestSerialization.m in Sources */,
@@ -785,6 +808,7 @@
 				04BBF3951BA1822200C4DD7A /* AFNetworkReachabilityManager.m in Sources */,
 				04D7377D1BA175B3009D2400 /* MainTabBarController.m in Sources */,
 				04D737A11BA18064009D2400 /* FMDatabaseAdditions.m in Sources */,
+				9FFD64701BB2A0A1001E2A27 /* UIBarButtonItem+Badge.m in Sources */,
 				046ACA411BB0058500FF09C2 /* LookPassController.m in Sources */,
 				04BBF39B1BA1822200C4DD7A /* MKAnnotationView+WebCache.m in Sources */,
 				04D7372D1BA15C62009D2400 /* main.m in Sources */,
