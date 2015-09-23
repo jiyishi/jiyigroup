@@ -32,6 +32,7 @@
     self.navigationItem.leftBarButtonItem = leftBtnItem;
     
     UIButton *nextBtn = [MyUtil createBtnFrame:CGRectMake(100, 100, 100, 40) title:@"下一页" target:self action:@selector(nextBtnAction:)];
+    [nextBtn setBackgroundColor:[UIColor yellowColor]];
     [self.view addSubview:nextBtn];
 }
 
