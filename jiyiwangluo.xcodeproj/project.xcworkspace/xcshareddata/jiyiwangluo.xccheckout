@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9057BB49-155B-4DF1-B913-2B6804684A0E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>jiyiwangluo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4D03A79C86EF0197C03F7987710A2619D2B85BE8</key>
 		<string>https://github.com/jiyishi/jiyigroup.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>jiyiwangluo.xcodeproj/project.xcworkspace</string>
+	<string>jiyiwangluo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4D03A79C86EF0197C03F7987710A2619D2B85BE8</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>4D03A79C86EF0197C03F7987710A2619D2B85BE8</string>
 			<key>IDESourceControlWCCName</key>
-			<string>jiyigroup</string>
+			<string>jiyiwangluo</string>
 		</dict>
 	</array>
 </dict>
