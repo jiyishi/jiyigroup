@@ -63,6 +63,7 @@
 		04D737A41BA18064009D2400 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379F1BA18064009D2400 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04DF8B1B1BB3806A00A19C3A /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF8B1A1BB3806A00A19C3A /* SliderViewController.m */; };
 		9FEBDBFA1BB386A600D94359 /* WSDropMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEBDBF91BB386A600D94359 /* WSDropMenuView.m */; };
+		9FEBDC001BB3895A00D94359 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEBDBFF1BB3895A00D94359 /* FirstViewController.m */; };
 		9FED46731BB2351D00D74A82 /* ClothDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46721BB2351D00D74A82 /* ClothDetailController.m */; };
 		9FED46761BB2361800D74A82 /* DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46751BB2361800D74A82 /* DesignerViewController.m */; };
 		9FED467C1BB2446F00D74A82 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED467B1BB2446F00D74A82 /* SearchViewController.m */; };
@@ -203,6 +204,8 @@
 		04DF8B1A1BB3806A00A19C3A /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		9FEBDBF81BB386A600D94359 /* WSDropMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDropMenuView.h; sourceTree = "<group>"; };
 		9FEBDBF91BB386A600D94359 /* WSDropMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDropMenuView.m; sourceTree = "<group>"; };
+		9FEBDBFE1BB3895A00D94359 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		9FEBDBFF1BB3895A00D94359 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		9FED46711BB2351D00D74A82 /* ClothDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothDetailController.h; sourceTree = "<group>"; };
 		9FED46721BB2351D00D74A82 /* ClothDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothDetailController.m; sourceTree = "<group>"; };
 		9FED46741BB2361800D74A82 /* DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewController.h; sourceTree = "<group>"; };
@@ -567,6 +570,8 @@
 				9FED467A1BB2446F00D74A82 /* SearchViewController.h */,
 				9FEBDBF81BB386A600D94359 /* WSDropMenuView.h */,
 				9FEBDBF91BB386A600D94359 /* WSDropMenuView.m */,
+				9FEBDBFE1BB3895A00D94359 /* FirstViewController.h */,
+				9FEBDBFF1BB3895A00D94359 /* FirstViewController.m */,
 				9FED467B1BB2446F00D74A82 /* SearchViewController.m */,
 				9FED46711BB2351D00D74A82 /* ClothDetailController.h */,
 				9FED46721BB2351D00D74A82 /* ClothDetailController.m */,
@@ -818,6 +823,7 @@
 				9FEDECE01BB15EE20047F4CF /* ClothesCell.m in Sources */,
 				04BBF3951BA1822200C4DD7A /* AFNetworkReachabilityManager.m in Sources */,
 				04D7377D1BA175B3009D2400 /* MainTabBarController.m in Sources */,
+				9FEBDC001BB3895A00D94359 /* FirstViewController.m in Sources */,
 				04D737A11BA18064009D2400 /* FMDatabaseAdditions.m in Sources */,
 				9FFD64701BB2A0A1001E2A27 /* UIBarButtonItem+Badge.m in Sources */,
 				046ACA411BB0058500FF09C2 /* LookPassController.m in Sources */,
