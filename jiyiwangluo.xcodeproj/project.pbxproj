@@ -61,11 +61,7 @@
 		04D737A21BA18064009D2400 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379B1BA18064009D2400 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A31BA18064009D2400 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A41BA18064009D2400 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379F1BA18064009D2400 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-<<<<<<< Updated upstream
-		9FEBDBEE1BB3808F00D94359 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEBDBED1BB3808F00D94359 /* DetailViewController.m */; };
-=======
 		04DF8B1B1BB3806A00A19C3A /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF8B1A1BB3806A00A19C3A /* SliderViewController.m */; };
->>>>>>> Stashed changes
 		9FED46731BB2351D00D74A82 /* ClothDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46721BB2351D00D74A82 /* ClothDetailController.m */; };
 		9FED46761BB2361800D74A82 /* DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46751BB2361800D74A82 /* DesignerViewController.m */; };
 		9FED467C1BB2446F00D74A82 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED467B1BB2446F00D74A82 /* SearchViewController.m */; };
@@ -202,13 +198,8 @@
 		04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		04D7379E1BA18064009D2400 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		04D7379F1BA18064009D2400 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-		9FEBDBEC1BB3808F00D94359 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		9FEBDBED1BB3808F00D94359 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-=======
 		04DF8B191BB3806A00A19C3A /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		04DF8B1A1BB3806A00A19C3A /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		9FED46711BB2351D00D74A82 /* ClothDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothDetailController.h; sourceTree = "<group>"; };
 		9FED46721BB2351D00D74A82 /* ClothDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothDetailController.m; sourceTree = "<group>"; };
 		9FED46741BB2361800D74A82 /* DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewController.h; sourceTree = "<group>"; };
@@ -464,8 +455,6 @@
 		04D7371E1BA15C62009D2400 = {
 			isa = PBXGroup;
 			children = (
-				9FEBDBEC1BB3808F00D94359 /* DetailViewController.h */,
-				9FEBDBED1BB3808F00D94359 /* DetailViewController.m */,
 				04BBF35A1BA181CC00C4DD7A /* libsqlite3.dylib */,
 				046ACA2B1BAFE06200FF09C2 /* image */,
 				04D737661BA1606D009D2400 /* home */,
@@ -814,7 +803,6 @@
 				046ACA321BAFF27100FF09C2 /* JYRegisterView.m in Sources */,
 				04D737911BA17FA7009D2400 /* InformationViewController.m in Sources */,
 				9FEDECE31BB15F010047F4CF /* LeftInfoViewController.m in Sources */,
-				9FEBDBEE1BB3808F00D94359 /* DetailViewController.m in Sources */,
 				04BBF3AD1BA1824900C4DD7A /* ProgressHUD.m in Sources */,
 				04BBF3BA1BA1828000C4DD7A /* UIView+Extension.m in Sources */,
 				9FED46731BB2351D00D74A82 /* ClothDetailController.m in Sources */,

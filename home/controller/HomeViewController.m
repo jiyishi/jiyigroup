@@ -117,6 +117,7 @@
     _tableView.tableHeaderView = _view;
     _tableView.delegate = self;
     _tableView.dataSource = self;
+//    [_tableView registerNib:[UINib nibWithNibName:@"CloseCell" bundle:nil] forCellReuseIdentifier:@"identifier"];
     
 }
 
