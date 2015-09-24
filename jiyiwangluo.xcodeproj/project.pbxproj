@@ -62,7 +62,6 @@
 		04D737A31BA18064009D2400 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379D1BA18064009D2400 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D737A41BA18064009D2400 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7379F1BA18064009D2400 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04DF8B1B1BB3806A00A19C3A /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF8B1A1BB3806A00A19C3A /* SliderViewController.m */; };
-		9FEBDBFA1BB386A600D94359 /* WSDropMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEBDBF91BB386A600D94359 /* WSDropMenuView.m */; };
 		9FED46731BB2351D00D74A82 /* ClothDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46721BB2351D00D74A82 /* ClothDetailController.m */; };
 		9FED46761BB2361800D74A82 /* DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED46751BB2361800D74A82 /* DesignerViewController.m */; };
 		9FED467C1BB2446F00D74A82 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED467B1BB2446F00D74A82 /* SearchViewController.m */; };
@@ -201,8 +200,6 @@
 		04D7379F1BA18064009D2400 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		04DF8B191BB3806A00A19C3A /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		04DF8B1A1BB3806A00A19C3A /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
-		9FEBDBF81BB386A600D94359 /* WSDropMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDropMenuView.h; sourceTree = "<group>"; };
-		9FEBDBF91BB386A600D94359 /* WSDropMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDropMenuView.m; sourceTree = "<group>"; };
 		9FED46711BB2351D00D74A82 /* ClothDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothDetailController.h; sourceTree = "<group>"; };
 		9FED46721BB2351D00D74A82 /* ClothDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothDetailController.m; sourceTree = "<group>"; };
 		9FED46741BB2361800D74A82 /* DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewController.h; sourceTree = "<group>"; };
@@ -565,8 +562,6 @@
 				04D737891BA17F4C009D2400 /* HomeViewController.h */,
 				04D7378A1BA17F4C009D2400 /* HomeViewController.m */,
 				9FED467A1BB2446F00D74A82 /* SearchViewController.h */,
-				9FEBDBF81BB386A600D94359 /* WSDropMenuView.h */,
-				9FEBDBF91BB386A600D94359 /* WSDropMenuView.m */,
 				9FED467B1BB2446F00D74A82 /* SearchViewController.m */,
 				9FED46711BB2351D00D74A82 /* ClothDetailController.h */,
 				9FED46721BB2351D00D74A82 /* ClothDetailController.m */,
@@ -810,7 +805,6 @@
 				9FEDECE31BB15F010047F4CF /* LeftInfoViewController.m in Sources */,
 				04BBF3AD1BA1824900C4DD7A /* ProgressHUD.m in Sources */,
 				04BBF3BA1BA1828000C4DD7A /* UIView+Extension.m in Sources */,
-				9FEBDBFA1BB386A600D94359 /* WSDropMenuView.m in Sources */,
 				9FED46731BB2351D00D74A82 /* ClothDetailController.m in Sources */,
 				04BBF3A71BA1822200C4DD7A /* UIImage+WebP.m in Sources */,
 				04BBF3A31BA1822200C4DD7A /* SDWebImagePrefetcher.m in Sources */,
